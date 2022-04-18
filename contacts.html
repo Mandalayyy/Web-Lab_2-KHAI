@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contacts.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Device Market! Купить смартфон в Украине!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="/index.html" class="logo">
+              <img class="img__logo" src="/images/logo.jpg" alt="logo" width="350" height="86" />
+            </a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="/articles.html" class="nav__link">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="/catalogue.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="/gallery.html" class="nav__link">Галерея изображений</a>
+            </li>
+            <li class="nav__item">
+              <a href="/registration.html" class="nav__link">Реестрация</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contacts.html" id="current" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="search__row__intro">
+        <div class="wrapper">
+          <section class="search__row">
+            <div class="search__block">
+              <input class="search__item" type="text" placeholder="Поиск по сайту" />
+              <button class="fa fa-search" id="search__button" type="submit"></button>
+            </div>
+            <div class="shopping_cart">
+              <a href="!#" class="cart__link">
+                <img class="cart" src="/images/cart.png" alt="cart" />
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <table class="table">
+          <tr>
+            <td class="text">Пишите</td>
+            <td><a href="mailto:devicemarket@gmail.com">devicemarket@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td rowspan="3" class="text">Звоните</td>
+            <td><a href="tel:+38 (066)-656-75-56">+38 (066)-656-75-56</a></td>
+          </tr>
+          <tr>
+            <td><a href="tel:+38 (099)-617-14-32">+38 (099)-617-14-32</a></td>
+          </tr>
+          <tr>
+            <td><a href="tel:+38 (068)-415-02-00">+38 (068)-415-02-00</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="text">Приходите</td>
+            <td>Ул. Академика Филиппова, 49а</td>
+          </tr>
+          <tr>
+            <td>Ул. Сумская, 19</td>
+          </tr>
+        </table>
+        <select class="place_titles" value="Оберіть пункт нашого магазину">
+          <option value="1">Device Market Ул. Сумская, 19</option>
+          <option value="2">Device Market Ул. Академика Филиппова, 49</option>
+        </select>
+
+        <div class="map" id="map"></div>
+        <div id="information_place">
+          <div class="lblTxt">
+            <label><b>Час роботи</b></label>
+            <label id="Work_Time" class="lblTxt"></label><br />
+          </div>
+          <div class="lblTxt">
+            <label><b>Адреса</b></label>
+            <label id="Adress" class="lblTxt"></label><br />
+          </div>
+          <div class="lblTxt">
+            <label><b>Номер телефону</b></label>
+            <label id="Phone" class="lblTxt"></label><br />
+          </div>
+          <div class="lblTxt">
+            <label><b>Рейтинг</b></label>
+            <label id="Rate" class="lblTxt"></label><br />
+          </div>
+          <div class="lblTxt">
+            <label><b>Сайт магазину</b></label>
+            <label id="Website" class="lblTxt"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h2 class="mainText">Оставьте заявку</h2>
+        <p class="secondText">И мы свяжемся с вами!</p>
+        <div class="formInput">
+          <span><i class="fas fa-user"></i></span>
+          <input type="text" placeholder="Введите ваше имя" />
+        </div>
+        <div class="formInput">
+          <span><i class="fas fa-phone-alt"></i></span>
+          <input type="text" placeholder="Введите ваш телефон" />
+        </div>
+        <input type="submit" class="send" value="Отправить" />
+      </div>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqHPjf2w5RrrQKMeJgfl9-5Uss-f7zsWI&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+      <script src="/script/map.js"></script>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a href="/index.html" class="logo">
+            <img class="img__logo" src="/images/logo.jpg" alt="logo" width="350" height="86" />
+          </a>
+        </div>
+        <address class="footer__address">
+          <h3 class="footer__text">
+            Интернет-магазин Device Market &copy 2012-2022. Все права защищены.
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+380961111111">+380961111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

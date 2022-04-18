@@ -34,6 +34,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #212121;
 }
 
 .header__nav {
@@ -132,6 +133,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px 0;
 }
 .products__list {
   display: flex;
@@ -194,7 +196,6 @@ p {
 footer {
   height: 252px;
   background: #2f303a;
-  margin-top: 50px;
 }
 
 .footer__wrapper {
@@ -241,4 +242,19 @@ footer {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.all__products {
+  padding: 20px 0;
+}
+
+.slide div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  width: 1200px;
+  height: 600px;
 }

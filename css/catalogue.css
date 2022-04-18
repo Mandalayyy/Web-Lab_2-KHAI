@@ -1,0 +1,51 @@
+sup {
+  vertical-align: super;
+  color: red;
+}
+
+.catalogue {
+  display: flex;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.catalogue__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.catalogue__item {
+  list-style-type: circle;
+  padding-top: 5px;
+}
+
+.catalogue__subitem {
+  margin-left: 40px;
+  padding-top: 5px;
+  list-style-image: url(/images/galka.png);
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.catalogue__subitem__text {
+  background-color: bisque;
+}
+
+.color {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  background-color: grey;
+}

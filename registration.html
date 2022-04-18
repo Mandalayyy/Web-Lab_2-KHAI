@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/registration.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Device Market! Купить смартфон в Украине!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="/index.html" class="logo">
+              <img class="img__logo" src="/images/logo.jpg" alt="logo" width="350" height="86" />
+            </a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="/articles.html" class="nav__link">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="/catalogue.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="/gallery.html" class="nav__link">Галерея изображений</a>
+            </li>
+            <li class="nav__item">
+              <a href="/registration.html" id="current" class="nav__link">Реестрация</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="search__row__intro">
+        <div class="wrapper">
+          <section class="search__row">
+            <div class="search__block">
+              <input class="search__item" type="text" placeholder="Поиск по сайту" />
+              <button class="fa fa-search" id="search__button" type="submit"></button>
+            </div>
+            <div class="shopping_cart">
+              <a href="!#" class="cart__link">
+                <img class="cart" src="/images/cart.png" alt="cart" />
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="form">
+        <form action="submit.php" method="post" class="registration__form">
+          <div class="container">
+            <h1 class="form__head__text">Регистрация</h1>
+            <p class="form__text">Пожалуйста, заполните форму для создания аккаунта.</p>
+
+            <hr />
+            <div class="form__firstname">
+              <label for="firstname">Фамилия</label>
+              <input type="text" placeholder="Введите фамилию" name="firstname" />
+            </div>
+
+            <div class="form__name">
+              <label for="name">Имя</label>
+              <input type="text" placeholder="Введите имя" name="name" />
+            </div>
+
+            <div class="form__otch">
+              <label for="otch">Отчество</label>
+              <input type="text" placeholder="Введите отчество" name="otch" />
+            </div>
+
+            <div class="form__site">
+              <label for="site">Ваш сайт</label>
+              <input type="text" placeholder="Введите Ваш сайт" name="site" />
+            </div>
+
+            <div class="form__sex">
+              <label for="sex">Пол</label><br />
+              <span class="borderedInput">
+                <input type="radio" name="sex" value="male" />Мужчина
+              </span>
+              <span class="borderedInput">
+                <input type="radio" name="sex" value="female" />Женщина
+              </span>
+            </div>
+
+            <div class="form__birthday">
+              <label for="birthday">Дата рождения</label>
+              <input type="date" name="birthday" />
+            </div>
+
+            <div class="form__mark">
+              <label for="mark">Ваша любимая марка телефонов</label>
+              <span class="borderedInput"
+                ><input type="radio" name="mark" value="Xiaomi" />Xiaomi</span
+              >
+              <span class="borderedInput"
+                ><input type="radio" name="mark" value="Samsung" />Samsung</span
+              >
+              <span class="borderedInput"
+                ><input type="radio" name="mark" value="Huawei" />Huawei</span
+              >
+              <span class="borderedInput"
+                ><input type="radio" name="mark" value="Lenovo" />Lenovo</span
+              >
+            </div>
+
+            <div class="form__about">
+              <label for="about">О себе:</label>
+              <textarea name="text" aria-invalid="false"></textarea>
+            </div>
+
+            <div class="form__email">
+              <p hidden id="#result"></p>
+              <label for="email">Эл. почта</label>
+              <input type="text" id="email" placeholder="Введите эл. почту" name="email" />
+            </div>
+
+            <div class="form__password">
+              <label for="password">Пароль</label>
+              <input id="password" type="password" placeholder="Введите пароль" name="password" />
+            </div>
+
+            <div class="form__password__repeat">
+              <label for="password__repeat">Повторите пароль</label>
+              <input
+                id="password__repeat"
+                class="password"
+                type="password"
+                placeholder="Повторите пароль"
+                onkeyup="checkPass(); false;"
+                name="password-repeat"
+                required
+              />
+              <div id="error-nwl"></div>
+            </div>
+
+            <hr />
+            <div class="form__buttons">
+              <p class="termsAndPolicy">
+                Создавая аккаунт, вы соглашаетесь с нашими .<a href="#"
+                  >Условия использования и Политикой конфиденциальности</a
+                >.
+              </p>
+              <button type="submit" class="registerbtn">Зарегистрироваться</button>
+              <button type="reset" class="clearBtn">Очистить</button>
+            </div>
+
+            <div class="container signin">
+              <p>Уже есть аккаунт? <a href="#">Войдите</a>.</p>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <script src="/script/registration.js"></script>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a href="/index.html" class="logo">
+            <img class="img__logo" src="/images/logo.jpg" alt="logo" width="350" height="86" />
+          </a>
+        </div>
+        <address class="footer__address">
+          <h3 class="footer__text">
+            Интернет-магазин Device Market &copy 2012-2022. Все права защищены.
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+380961111111">+380961111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

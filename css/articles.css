@@ -1,0 +1,129 @@
+.articles {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.articles__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articles__item {
+  margin-bottom: 20px;
+}
+
+.article__link {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article__wrapper {
+  width: 1200px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ebebeb !important;
+  padding: 9px;
+  margin-right: 20px;
+}
+
+.main__article {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ebebeb !important;
+  padding: 9px;
+}
+
+.article__link {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.main__article > p {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.article__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.article__head__text {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.article__text > p {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.article__text > p::first-letter {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article__link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.video > h3 {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
